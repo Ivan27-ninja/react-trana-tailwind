@@ -1,0 +1,73 @@
+const colors = require("tailwindcss/colors");
+
+module.exports = {
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  presets: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+
+        black: colors.black,
+        white: colors.white,
+        gray: {
+          50: "#fafafa",
+          100: "#f6f6f6",
+          200: "#e8e8e8",
+          300: "#dddddd",
+          400: "#a4a4a4",
+          500: "#777777",
+          600: "#525252",
+          700: "#3f3f3f",
+          800: "#212121",
+          900: "#171717",
+        },
+        red: colors.red,
+        yellow: colors.amber,
+        green: colors.emerald,
+        blue: {
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#236BF8",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+        },
+        indigo: colors.indigo,
+        purple: colors.violet,
+        pink: colors.pink,
+      },
+    },
+  },
+  variants: [
+    "responsive",
+    // "first",
+    // "last",
+    // "odd",
+    // "even",
+    // "visited",
+    // "checked",
+    // "group-hover",
+    // "group-focus",
+    // "focus-within",
+    "hover",
+    "focus",
+    // "focus-visible",
+    // "active",
+    "disabled",
+  ],
+  plugins: [],
+};

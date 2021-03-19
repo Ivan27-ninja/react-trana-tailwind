@@ -1,0 +1,20 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.avatar.tiny {
+  @apply -ml-2 w-6 h-6;
+}
+
+.avatar.small {
+  @apply -ml-3 w-8 h-8;
+}
+
+.avatar.medium {
+  @apply -ml-4 w-12 h-12;
+}
+
+.avatar.large {
+  @apply -ml-5 w-16 h-16;
+}
